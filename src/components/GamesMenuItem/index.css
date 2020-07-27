@@ -1,0 +1,27 @@
+.games-menu-item{
+    display: flex;
+    flex-direction: row;
+    align-Items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #FFF;
+    text-transform: uppercase;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in, ease, linear;
+}
+.games-menu-item.active{
+    background-color: #47515d;
+
+}
+.games-menu-item.inactive{
+    background-color: #30394a;
+}
+
+.games-menu-item-count{
+    margin-left: 15px;
+}

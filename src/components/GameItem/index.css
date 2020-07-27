@@ -1,0 +1,58 @@
+.large, .small {
+    --game-item-padding: 5px;
+    --game-item-side-size: 100px;
+    display: flex;
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+
+}
+.large {
+    grid-row: span 2;
+    --calc-game-item-side-size: calc(var(--game-item-side-size) * 2 - var(--game-item-padding) * 2);
+    width: var(--calc-game-item-side-size);
+    height: var(--calc-game-item-side-size);
+}
+.small {
+    --calc-game-item-side-size: calc(var(--game-item-side-size) - var(--game-item-padding) * 2);
+    width: var(--calc-game-item-side-size);
+    height: var(--calc-game-item-side-size);
+}
+.large:nth-child(odd) {
+    grid-column: 1 / span 2;
+}
+.large:nth-child(even) {
+    grid-column: 3 / span 2;
+}
+
+.game-item-image{
+    display: block;
+    max-width: calc(var(--calc-game-item-side-size) - 4px);
+    max-height: calc(var(--calc-game-item-side-size) - 4px);
+    object-fit: contain;
+    border: 2px solid #243040;
+}
+
+.game-item-content{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.game-item-name{
+    margin: 10px;
+}
+
+.favorite-icon-orientation{
+    align-self: flex-end;
+    margin: 10px;
+}
+
+
+
+

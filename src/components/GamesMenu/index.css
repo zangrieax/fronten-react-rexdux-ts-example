@@ -1,0 +1,7 @@
+.game-menu{
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px;
+}

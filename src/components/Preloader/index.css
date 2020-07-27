@@ -1,0 +1,13 @@
+.icon-preloader svg{
+    animation: loading .6s ease-in-out infinite;
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0deg) translateZ(0);
+    }
+    to{
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+
